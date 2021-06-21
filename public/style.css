@@ -1,3 +1,10 @@
 body {
   border: 0;
 }
+
+div.main {
+  background-color: rgb(41, 64, 82);
+  min-height: 100vh;
+  min-width: 100hw;
+  color: white;
+}
