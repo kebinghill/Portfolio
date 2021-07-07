@@ -1,10 +1,41 @@
 body {
-  border: 0;
+  margin: 0;
+  background-color: rgb(11, 11, 11);
 }
 
-div.main {
-  background-color: rgb(41, 64, 82);
-  min-height: 100vh;
+.main {
+  margin: 0;
+  padding: 0;
+}
+
+.project-list {
+  background-color: white;
+  height: 70vh;
   min-width: 100hw;
+}
+
+.header-image {
+  width: 100vw;
+  height: 50vh;
+}
+
+.image-overlay {
   color: white;
+}
+
+.image-container {
+  position: relative;
+  color: white;
+}
+
+.page-links {
+  position: absolute;
+  padding: 2px;
+  bottom: 10px;
+  left: 16px;
+  font-size: 18px;
+}
+
+.link {
+  padding: 3px;
 }
