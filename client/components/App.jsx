@@ -1,21 +1,23 @@
 import React from 'react';
+import ProjectList from './ProjectList';
+import PageLinks from './PageLinks';
+import SocialLinks from './SocialLinks';
 
 const App = () => {
   return (
-    <div className="main">
+    <div>
+      {/* HEADER IMAGE AND LINKS */}
       <div className="image-container">
         <img
           src="/images/screenshot.png"
-          alt="Main Page Image Here"
+          alt="Art Image"
           className="header-image"
         />
-        <div className="page-links">
-          <a className="link">Code</a>
-          <a className="link">Music</a>
-          <a className="link">Bio</a>
-        </div>
+        <div className="title">KEVIN GIL</div>
+        <PageLinks />
+        <SocialLinks />
       </div>
-      <div className="project-list"></div>
+      <ProjectList />
     </div>
   );
 };

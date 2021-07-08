@@ -1,11 +1,12 @@
+@font-face {
+  font-family: 'Encode Sans SC';
+  src: url('./font/EncodeSansSC-VariableFont_wdth\,wght.ttf');
+}
+
 body {
   margin: 0;
   background-color: rgb(11, 11, 11);
-}
-
-.main {
-  margin: 0;
-  padding: 0;
+  font-family: 'Encode Sans SC';
 }
 
 .project-list {
@@ -16,7 +17,7 @@ body {
 
 .header-image {
   width: 100vw;
-  height: 50vh;
+  height: 45vh;
 }
 
 .image-overlay {
@@ -36,6 +37,20 @@ body {
   font-size: 18px;
 }
 
+.social-links {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
 .link {
   padding: 3px;
+}
+
+.title {
+  position: absolute;
+  top: 37%;
+  width: 100%;
+  text-align: center;
+  font-size: 80px;
 }
