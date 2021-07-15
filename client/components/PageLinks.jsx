@@ -3,9 +3,13 @@ import React from 'react';
 const PageLinks = () => {
   return (
     <div className="page-links">
-      <a className="link">Code</a>
+      <a href="#bio-section" className="link">
+        Bio
+      </a>
+      <a href="#code-section" className="link">
+        Code
+      </a>
       <a className="link">Music</a>
-      <a className="link">Bio</a>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import ProjectList from './ProjectList';
 import PageLinks from './PageLinks';
 import SocialLinks from './SocialLinks';
+import BioSection from './BioSection';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <PageLinks />
         <SocialLinks />
       </div>
+      <BioSection />
       <ProjectList />
     </div>
   );

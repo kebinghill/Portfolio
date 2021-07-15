@@ -4,7 +4,7 @@ import SingleProject from './SingleProject';
 const ProjectList = () => {
   return (
     <div>
-      <div className="project-list"></div>
+      <div id="code-section" className="project-list"></div>
     </div>
   );
 };
