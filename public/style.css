@@ -85,3 +85,14 @@ a {
   font-size: 20px;
   letter-spacing: 5px;
 }
+
+@media screen and (max-width: 540px) {
+  #bio {
+    width: 90vw;
+  }
+
+  .section-container {
+    flex-direction: column-reverse;
+    height: 100vh;
+  }
+}
