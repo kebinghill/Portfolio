@@ -48,7 +48,7 @@ a {
 
 .title {
   position: absolute;
-  top: 35%;
+  top: 30%;
   width: 100%;
   text-align: center;
   font-size: 80px;
@@ -107,13 +107,12 @@ a {
   }
 }
 
-@media (orientation: landscape) {
+@media screen and (min-width: 540px) and (max-width: 844px) {
   .header-image {
     height: 390px;
   }
   .title {
     top: 30%;
-    text-align: center;
   }
 
   .section-container {
@@ -129,5 +128,11 @@ a {
 
   #bio {
     font-size: 16.5px;
+  }
+}
+
+@media screen and (max-height: 930px) and (min-width: 844px) {
+  .title {
+    top: 29%;
   }
 }
