@@ -54,10 +54,18 @@ a {
 
 .title {
   position: absolute;
-  top: 37%;
+  top: 35%;
   width: 100%;
   text-align: center;
   font-size: 80px;
+}
+
+.sub-title {
+  position: absolute;
+  top: 58%;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
 }
 
 .section-container {
@@ -93,6 +101,14 @@ a {
 
   .section-container {
     flex-direction: column-reverse;
-    height: 800px;
+    height: 750px;
+  }
+
+  .header-image {
+    height: 300px;
+  }
+
+  .title {
+    top: 25%;
   }
 }

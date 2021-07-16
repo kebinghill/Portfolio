@@ -15,6 +15,7 @@ const App = () => {
           className="header-image"
         />
         <div className="title">KEVIN GIL</div>
+        <div className="sub-title">SOFTWARE ENGINEER</div>
         <PageLinks />
         <SocialLinks />
       </div>
