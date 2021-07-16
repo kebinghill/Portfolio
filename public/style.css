@@ -115,14 +115,15 @@ a {
 
 @media (orientation: landscape) {
   .header-image {
-    height: 340px;
+    height: 390px;
   }
   .title {
     top: 30%;
+    text-align: center;
   }
 
   .section-container {
-    height: 340px;
+    height: 390px;
   }
 
   #headshot {
