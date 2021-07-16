@@ -112,3 +112,26 @@ a {
     top: 25%;
   }
 }
+
+@media (orientation: landscape) {
+  .header-image {
+    height: 340px;
+  }
+  .title {
+    top: 30%;
+  }
+
+  .section-container {
+    height: 340px;
+  }
+
+  #headshot {
+    width: 250px;
+    height: 250px;
+    border-radius: 2%;
+  }
+
+  #bio {
+    font-size: 16.5px;
+  }
+}
