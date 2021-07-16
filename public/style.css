@@ -93,6 +93,6 @@ a {
 
   .section-container {
     flex-direction: column-reverse;
-    height: 100vh;
+    height: 800px;
   }
 }
