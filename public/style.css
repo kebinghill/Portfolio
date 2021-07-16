@@ -14,12 +14,6 @@ a {
   text-decoration: none;
 }
 
-.project-list {
-  background-color: white;
-  height: 70vh;
-  min-width: 100hw;
-}
-
 .header-image {
   width: 100vw;
   height: 45vh;
@@ -124,6 +118,7 @@ a {
 
   .section-container {
     height: 390px;
+    width: 100vw;
   }
 
   #headshot {
