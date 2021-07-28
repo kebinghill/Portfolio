@@ -6,10 +6,11 @@ const SocialLinks = () => {
       {/* GITHUB LINK */}
       <a href="https://github.com/kebinghill" className="link" target="_blank">
         <img
-          src="/images/whitegithub.png"
+          src="/images/githubwhite.png"
           alt="Github"
-          height="30"
-          width="30"
+          height="25"
+          width="25"
+          border="2px red solid"
         />
       </a>
       {/* LINKIN LINK */}
@@ -19,10 +20,11 @@ const SocialLinks = () => {
         target="_blank"
       >
         <img
-          src="/images/whitelinkedin.png"
+          src="/images/linkedinwhite.png"
           alt="LinkedIn"
-          height="30"
-          width="30"
+          height="26"
+          width="26"
+          border="2px red solid"
         />
       </a>
     </div>

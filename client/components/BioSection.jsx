@@ -3,9 +3,9 @@ import React, { useEffect, useRef } from 'react';
 const BioSection = () => {
   // set up text to print, each item in array is new line
   const aText = new Array(
-    'Hey there, welcome to my page!',
+    'Welcome to my portfolio page!',
     ' ',
-    'I am a software engineer who graduated from Fullstack Academy on 07/21.',
+    'I am a software engineering graduate from Fullstack Academy.',
     '',
     'If you want to check out more of my work, scroll down to the next section.'
   );
