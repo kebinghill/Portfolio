@@ -15,8 +15,10 @@ a {
 }
 
 .header-image {
-  width: 100vw;
-  height: 45vh;
+  margin: 8px;
+  border-radius: 5px;
+  width: 99vw;
+  height: 99vh;
 }
 
 .image-overlay {
@@ -31,14 +33,14 @@ a {
 .page-links {
   position: absolute;
   padding: 2px;
-  bottom: 10px;
+  bottom: 20px;
   left: 16px;
   font-size: 18px;
 }
 
 .social-links {
   position: absolute;
-  bottom: 8px;
+  bottom: 18px;
   right: 16px;
 }
 

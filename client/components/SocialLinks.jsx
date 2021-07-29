@@ -8,8 +8,8 @@ const SocialLinks = () => {
         <img
           src="/images/whitegithub.png"
           alt="Github"
-          height="30"
-          width="30"
+          height="32"
+          width="32"
         />
       </a>
       {/* LINKIN LINK */}
@@ -21,8 +21,8 @@ const SocialLinks = () => {
         <img
           src="/images/whitelinkedin.png"
           alt="LinkedIn"
-          height="30"
-          width="30"
+          height="32"
+          width="32"
         />
       </a>
     </div>
