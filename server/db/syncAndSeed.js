@@ -6,8 +6,13 @@ const syncAndSeed = async () => {
     await db.sync({ force: true });
 
     Project.create({
-      name: 'AttackOfTheCode',
+      name: 'Attack Of The Code',
       link: 'https://attack-of-the-code.com/',
+      headerImage: 'unsplashheader1.jpeg',
+    });
+    Project.create({
+      name: 'Peer Support Resource',
+      link: 'https://peer-support-resource.herokuapp.com/',
       headerImage: 'unsplashheader1.jpeg',
     });
   } catch (error) {
