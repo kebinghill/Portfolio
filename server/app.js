@@ -10,6 +10,22 @@ app.use(express.json());
 // api routes
 app.use('/api', require('./api'));
 
+// const jwt = require('jsonwebtoken');
+// require('dotenv').config();
+
+// const appleKeyId = '56GJ2SQ252';
+// const appleTeamId = '5SCR5ULXQW';
+
+// const jwtToken = jwt.sign({ iss: appleTeamId }, process.env.APPLE_PRIVATE_KEY, {
+//   algorithm: 'ES256',
+//   expiresIn: '180d',
+//   header: {
+//     alg: 'ES256',
+//     kid: appleKeyId,
+//   },
+// });
+// console.log(jwtToken);
+
 // static file-serving middleware
 app.use(express.static(path.join(__dirname, '..', '/public')));
 
