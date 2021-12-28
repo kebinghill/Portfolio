@@ -45,8 +45,9 @@ const BioSection = () => {
 
   return (
     <div className="section-container" id="bio-section">
-      <div id="bio"></div>
+
       <img src="./images/headshot1.png" alt="Headshot Photo" id="headshot" />
+      <div id="bio"></div>
     </div>
   );
 };
