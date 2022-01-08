@@ -12,48 +12,61 @@ body {
 a {
   color: white;
   text-decoration: none;
+  margin: none;
 }
 
-.header-image {
-  margin: 8px;
-  border-radius: 5px;
-  width: 99vw;
-  height: 99vh;
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("./images/screenshot.png");
+  background-size: cover;
+  text-align: center;
+  color: white;
+  min-height: 200px;
+}
+
+#title {
+  font-size: 60px;
+}
+
+#sub-title {
+font-size: 20px;
+}
+
+.header-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.header-links {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
 }
 
 .page-links {
-  position: absolute;
-  padding: 2px;
-  bottom: 20px;
-  left: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 18px;
+  padding-left: 3px;
+}
+
+.page-link {
+  padding: 1.5px;
 }
 
 .social-links {
-  position: absolute;
-  bottom: 10px;
-  right: 16px;
+  padding-right: 3px;
+  font-size: 0;
 }
 
-.link {
-  padding: 3px;
-}
-
-.header-overlay {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  color: white;
-}
-
-.title {
-  top: 10%;
-  font-size: 80px;
-}
-
-.sub-title {
-  top: 21%;
-  font-size: 25px;
+.social-link {
+  padding: 1px;
 }
 
 .section-container {
@@ -94,23 +107,9 @@ a {
     flex-direction: column-reverse;
     height: 750px;
   }
-
-  .header-image {
-    height: 300px;
-  }
-
-  .title {
-    top: 25%;
-  }
 }
 
 @media screen and (min-width: 540px) and (max-width: 844px) {
-  .header-image {
-    height: 390px;
-  }
-  .title {
-    top: 30%;
-  }
 
   .section-container {
     height: 390px;
@@ -125,11 +124,5 @@ a {
 
   #bio {
     font-size: 16.5px;
-  }
-}
-
-@media screen and (max-height: 930px) and (min-width: 844px) {
-  .title {
-    top: 29%;
   }
 }

@@ -4,22 +4,15 @@ import SocialLinks from './SocialLinks';
 
 const Header = () => {
   return (
-    <div>
-      <img
-        src="/images/screenshot.png"
-        alt="Art Image"
-        className="header-image"
-      />
-      <div className="title header-overlay">KEVIN GIL</div>
-      <div className="sub-title header-overlay">SOFTWARE ENGINEER</div>
-      <img
-        src="./images/headshot1.png"
-        alt="Headshot Photo"
-        id="headshot"
-        className="header-overlay"
-      />
-      <PageLinks />
-      <SocialLinks />
+    <div className="header-container">
+      <div className="header-titles">
+      <div id="title">KEVIN GIL</div>
+      <div id="sub-title">SOFTWARE ENGINEER</div>
+      </div>
+      <div className="header-links">
+        <PageLinks />
+        <SocialLinks />
+      </div>
     </div>
   );
 };
