@@ -15,6 +15,26 @@ a {
   margin: none;
 }
 
+a:hover {
+  background-color: rgba(80, 80, 80, 0.548);
+  border-radius: 6px;
+  text-decoration: underline;
+}
+
+button {
+  font-family: 'Encode Sans SC';
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: rgb(40, 102, 102);
+  padding: 10px;
+  border-radius: 4px;
+  width: 85vw;
+}
+
+button:hover {
+  background-color: rgb(18, 165, 165);
+}
 .header-container {
   display: flex;
   flex-direction: column;
@@ -69,60 +89,37 @@ font-size: 20px;
   padding: 1px;
 }
 
+.social-link:hover {
+  background-color: rgba(255, 255, 255, 0.884);
+  border-radius: 6px;
+}
+
 .section-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: 64vh;
 }
 
-#headshot {
-  top: 35%;
-  left: 70%;
-  width: 350px;
-  height: 350px;
-  border-radius: 2%;
-}
-
-#bio {
-  top: 35%;
+#introduction-text {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 43vh;
-  width: 50vw;
+  width: 98vw;
   color: white;
   text-align: center;
-  font-size: 20px;
+  font-size: 18.5px;
   letter-spacing: 5px;
 }
 
-@media screen and (max-width: 540px) {
-  #bio {
-    width: 90vw;
-  }
-
-  .section-container {
-    flex-direction: column-reverse;
-    height: 750px;
-  }
-}
-
 @media screen and (min-width: 540px) and (max-width: 844px) {
-
-  .section-container {
-    height: 390px;
-    width: 100vw;
-  }
 
   #headshot {
     width: 250px;
     height: 250px;
     border-radius: 2%;
-  }
-
-  #bio {
-    font-size: 16.5px;
   }
 }

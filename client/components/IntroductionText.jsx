@@ -1,13 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 
-const BioSection = () => {
+const IntroductionText = () => {
   // set up text to print, each item in array is new line
   const aText = new Array(
-    'Hey there, welcome to my page!',
+    'Welcome to my page!',
     ' ',
-    'I am a software engineer who graduated from Fullstack Academy on 07/21.',
+    "Have a look around (It's mobile friendly!)",
     '',
-    'If you want to check out more of my work, scroll down to the next section.'
+    'Feel free to reach out by clicking the button below'
   );
   const iSpeed = 65; // time delay of print out
   let iIndex = 0; // start printing array at this posision
@@ -22,7 +22,7 @@ const BioSection = () => {
     const typewriter = () => {
       sContents = ' ';
       iRow = Math.max(0, iIndex - iScrollAt);
-      var destination = document.getElementById('bio');
+      var destination = document.getElementById('introduction-text');
 
       while (iRow < iIndex) {
         sContents += aText[iRow++] + '<br />';
@@ -44,11 +44,11 @@ const BioSection = () => {
   }, []);
 
   return (
-    <div className="section-container" id="bio-section">
-      <div id="bio"></div>
-      <img src="./images/headshot1.png" alt="Headshot Photo" id="headshot" />
+    <div className="section-container" >
+      <div id="introduction-text"></div>
+      <button>Contact</button>
     </div>
   );
 };
 
-export default BioSection;
+export default IntroductionText;
