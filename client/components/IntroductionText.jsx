@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import ContactButton from './ContactButton';
 
 const IntroductionText = () => {
   // set up text to print, each item in array is new line
@@ -46,7 +47,7 @@ const IntroductionText = () => {
   return (
     <div className="section-container" >
       <div id="introduction-text"></div>
-      <button>Contact</button>
+      <ContactButton label="Contact" mailto="mailto:93kevingil@gmail.com" className="contact-button"/>
     </div>
   );
 };

@@ -21,18 +21,20 @@ a:hover {
   text-decoration: underline;
 }
 
-button {
+.contact-button {
+  display: flex;
+  justify-content: center;
   font-family: 'Encode Sans SC';
   color: white;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   background-color: rgb(40, 102, 102);
   padding: 10px;
   border-radius: 4px;
   width: 85vw;
 }
 
-button:hover {
+.contact-button:hover {
   background-color: rgb(18, 165, 165);
 }
 .header-container {
@@ -115,11 +117,11 @@ font-size: 20px;
   letter-spacing: 5px;
 }
 
-@media screen and (min-width: 540px) and (max-width: 844px) {
+/* @media screen and (min-width: 540px) and (max-width: 844px) {
 
   #headshot {
     width: 250px;
     height: 250px;
     border-radius: 2%;
   }
-}
+} */
