@@ -47,7 +47,7 @@ const IntroductionText = () => {
   return (
     <div className="section-container" >
       <div id="introduction-text"></div>
-      <ContactButton label="Contact" mailto="mailto:93kevingil@gmail.com" className="contact-button"/>
+      <ContactButton label="Contact" mailto="mailto:kevin.gil@hotmail.com" className="contact-button"/>
     </div>
   );
 };

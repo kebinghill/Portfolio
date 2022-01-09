@@ -1,15 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+function Bio() {
+  return <h2>Home</h2>;
+}
 
 const PageLinks = () => {
   return (
     <div className="page-links">
-      <a href="#bio-section" className="page-link">
+      <Link to="/bio" className="page-link header-link">
         Bio
-      </a>
-      <a href="#code-section" className="page-link">
+      </Link>
+      <Link to="/code" className="page-link header-link">
         Code
-      </a>
-      <a className="page-link">Music</a>
+      </Link>
+      <Link to="/music" className="page-link header-link">Music</Link>
     </div>
   );
 };

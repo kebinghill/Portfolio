@@ -4,7 +4,7 @@ const SocialLinks = () => {
   return (
     <div className="social-links">
       {/* GITHUB LINK */}
-      <a href="https://github.com/kebinghill" className="social-link" target="_blank">
+      <a href="https://github.com/kebinghill" className="social-link header-link" target="_blank">
         <img
           src="/images/whitegithub.png"
           alt="Github"
@@ -15,7 +15,7 @@ const SocialLinks = () => {
       {/* LINKIN LINK */}
       <a
         href="https://linkedin.com/in/kebinghill/"
-        className="social-link"
+        className="social-link header-link"
         target="_blank"
       >
         <img
