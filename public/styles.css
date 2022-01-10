@@ -89,12 +89,13 @@ font-size: 20px;
 }
 
 .social-link {
-  padding: 1px;
+  height: 28px;
+  width:28px;
 }
 
 .social-link:hover {
-  background-color: rgba(255, 255, 255, 0.884);
-  border-radius: 6px;
+  background-color: rgba(185, 185, 185, 0.5);
+  border-radius: 4px;
 }
 
 #introduction-text {
