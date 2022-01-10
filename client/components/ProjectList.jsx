@@ -1,10 +1,14 @@
 import React from 'react';
-import SingleProject from './SingleProject';
+import { FaAngleRight, FaAngleLeft } from 'react-icons/fa';
+import ProjectCard from './ProjectCard';
+
 
 const ProjectList = () => {
   return (
-    <div>
-      <div id="code-section" className="section-container"></div>
+    <div className="project-list">
+      <FaAngleLeft className="project-arrows"/>
+      <ProjectCard />
+      <FaAngleRight className="project-arrows"/>
     </div>
   );
 };
