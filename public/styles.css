@@ -120,9 +120,23 @@ font-size: 20px;
 }
 
 .project-list {
-  background-color: grey;
-  height: 45vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.13);
+  border-radius: 4px;
+  height: 50vh;
   width:95vw;
+}
+
+.project-card {
+  background-color: indianred;
+  height: 32vh;
+  width: 75vw;
+}
+
+.project-arrows {
+  font-size: 23px;
 }
 
 
