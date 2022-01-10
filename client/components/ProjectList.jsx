@@ -1,10 +1,10 @@
 import React from 'react';
-import SingleProject from './SingleProject';
+import ProjectCard from './ProjectCard';
 
 const ProjectList = () => {
   return (
-    <div>
-      <div id="code-section" className="section-container"></div>
+    <div className="project-list">
+      <ProjectCard />
     </div>
   );
 };
