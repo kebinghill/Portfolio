@@ -15,6 +15,11 @@ const syncAndSeed = async () => {
       link: 'https://peer-support-resource.herokuapp.com/',
       headerImage: 'unsplashheader1.jpeg',
     });
+    Project.create({
+      name: 'Finance App',
+      link: 'https://peer-support-resource.herokuapp.com/',
+      headerImage: 'unsplashheader1.jpeg',
+    });
   } catch (error) {
     console.log('ERROR SEEDING DB', error);
   }
