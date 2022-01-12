@@ -11,10 +11,8 @@ const ProjectList = () => {
     getAllProjects();
   }, []);
 
-  const url = 'http://localhost:3000/api/';
-
   const getAllProjects = () => {
-    axios.get( `${url}projects`).then((response) => {
+    axios.get( '/api/projects').then((response) => {
       const allProjects = response.data;
       getProjects(allProjects);
     })
