@@ -1,8 +1,13 @@
 const path = require('path');
 const express = require('express');
+const cors = require('cors');
 
 const app = express();
 module.exports = app;
+
+app.use(cors({
+  origin: 'https://kevingil.dev'
+}))
 
 // body parsing middleware
 app.use(express.json());
