@@ -6,7 +6,7 @@ const app = express();
 module.exports = app;
 
 app.use(cors({
-  origin: 'https://kevingil.dev'
+  origin: '*'
 }))
 
 // body parsing middleware
