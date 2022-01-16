@@ -6,9 +6,19 @@ router.get('/projects', async (req, res, next) => {
     const projects = await Project.findAll();
     res.status(200).send(projects);
   } catch (error) {
-    console.log('ERROR IN PROJECTS GET ROUTE:', error);
+    throw('ERROR IN PROJECTS GET ROUTE:', error);
   }
 });
+
+router.get('/project/:id', async (req, res, next) => {
+  try {
+    const id = req.params.id;
+    const project = await Project.findByPk(id, {include: {all:true} })
+    res.send(project);
+  } catch (error) {
+    throw('ERROR IN PROJECT GET ROUTE:',error)
+  }
+})
 
 //Router Error
 router.use((req, res, next) => {
