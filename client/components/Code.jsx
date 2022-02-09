@@ -1,6 +1,5 @@
-import React from 'react';
-import ProjectList from './ProjectList';
-
+import React from "react";
+import ProjectList from "./ProjectList";
 
 const Code = () => {
   return (
@@ -8,7 +7,7 @@ const Code = () => {
       <h2>Projects</h2>
       <ProjectList />
     </div>
-  )
+  );
 };
 
 export default Code;
