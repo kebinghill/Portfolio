@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import { FaAngleRight, FaAngleLeft } from 'react-icons/fa';
-
 
 const ProjectCard = (props) => {
 
-  const [currentProject, editCurrentProject] = useState('1');
+  const [currentProject, editCurrentProject] = useState('');
 
   if (props.projects.length > 0) {
     if (currentProject === '') {
