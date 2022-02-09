@@ -10,7 +10,10 @@ const ProjectCard = (props) => {
           <a href={props.projects[0].link} target="_blank">
             {props.projects[0].name}
           </a>
-          {/* {props.projects[0].headerImage} */}
+          {/* <img
+            src={}
+            alt="Nothing to see here :)"
+          /> */}
         </div>
       );
     } else {

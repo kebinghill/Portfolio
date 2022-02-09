@@ -8,7 +8,7 @@ const syncAndSeed = async () => {
     Project.create({
       name: "Attack Of The Code",
       link: "http://attack-of-the-code.com/",
-      headerImage: "unsplashheader1.jpeg",
+      headerImage: "attack-of-the-code.png",
     });
     Project.create({
       name: "Peer Support Resource",
