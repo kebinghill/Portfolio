@@ -1,16 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FaAngleRight, FaAngleLeft } from 'react-icons/fa';
+
 
 const ProjectCard = (props) => {
 
+  const [currentProject, editCurrentProject] = useState('');
+
   if (props.projects.length > 0) {
+    if (currentProject === '') {
     return (
-      props.projects.map((project, index) => {
-        return (<div className="project-card" key={index}>
-          <h2>{project.name}</h2>
+      <div>
+        {props.projects[0].name}
+        {/* {props.projects[0].headerImage} */}
+      </div>
+    )} else {
+      return (
+        <div>
+          {props.projects[currentProject].name}
+          {/* {props.projects[currentProject].headerImage} */}
         </div>
-        );
-      })
-    )
+      )
+    }
   } else {
   return <div className="project-card">
   </div>;
