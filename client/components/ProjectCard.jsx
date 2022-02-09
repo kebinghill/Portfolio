@@ -4,19 +4,19 @@ import { FaAngleRight, FaAngleLeft } from 'react-icons/fa';
 
 const ProjectCard = (props) => {
 
-  const [currentProject, editCurrentProject] = useState('');
+  const [currentProject, editCurrentProject] = useState('1');
 
   if (props.projects.length > 0) {
     if (currentProject === '') {
     return (
       <div>
-        {props.projects[0].name}
+        <a href={props.projects[0].link}>{props.projects[0].name}</a>
         {/* {props.projects[0].headerImage} */}
       </div>
     )} else {
       return (
         <div>
-          {props.projects[currentProject].name}
+          <a href={props.projects[currentProject].link}>{props.projects[currentProject].name}</a>
           {/* {props.projects[currentProject].headerImage} */}
         </div>
       )

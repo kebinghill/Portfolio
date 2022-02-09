@@ -7,7 +7,7 @@ const syncAndSeed = async () => {
 
     Project.create({
       name: 'Attack Of The Code',
-      link: 'https://attack-of-the-code.com/',
+      link: 'http://attack-of-the-code.com/',
       headerImage: 'unsplashheader1.jpeg',
     });
     Project.create({
