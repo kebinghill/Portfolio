@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import attackOfTheCodeImage from "../../public/images/attack-of-the-code.png";
 
 const ProjectCard = (props) => {
   const [currentProject, editCurrentProject] = useState("");
@@ -10,10 +11,16 @@ const ProjectCard = (props) => {
           <a href={props.projects[0].link} target="_blank">
             {props.projects[0].name}
           </a>
-          {/* <img
-            src={}
-            alt="Nothing to see here :)"
-          /> */}
+          {/*TODO MOVE INLINE STYLING TO CSS SHEET*/}
+          <div
+            style={{
+              backgroundImage: `url(${attackOfTheCodeImage})`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              height: "200px",
+              width: "200px",
+            }}
+          ></div>
         </div>
       );
     } else {
