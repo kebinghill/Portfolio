@@ -11,17 +11,13 @@ const ProjectCard = (props) => {
           <a href={props.projects[0].link} target="_blank">
             {props.projects[0].name}
           </a>
-          {/*TODO MOVE INLINE STYLING TO CSS SHEET*/}
-          <div
-            style={{
-              borderRadius: "3px",
-              backgroundImage: `url(${attackOfTheCodeImage})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
-              minHeight: "250px",
-              minWidth: "250px",
-            }}
-          ></div>
+          <img
+            src={attackOfTheCodeImage}
+            alt="Nothing to see here"
+            height="150px"
+            width="250px"
+            className="project-image"
+          />
         </div>
       );
     } else {

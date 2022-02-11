@@ -138,6 +138,14 @@ a {
   width: 75vw;
 }
 
+.project-image {
+  border-radius: "10px";
+  background-position: "center";
+  background-size: "cover";
+  max-height: "250px";
+  max-width: "250px";
+}
+
 .project-arrows {
   font-size: 23px;
 }
