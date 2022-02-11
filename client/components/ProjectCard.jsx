@@ -11,10 +11,11 @@ const ProjectCard = (props) => {
           <a href={props.projects[0].link} target="_blank">
             {props.projects[0].name}
           </a>
+          {/* TODO: figure out class names with img tags, make images dynamic with resizing of window */}
           <img
             src={attackOfTheCodeImage}
             alt="Nothing to see here"
-            height="150px"
+            height="200px"
             width="250px"
             className="project-image"
           />
