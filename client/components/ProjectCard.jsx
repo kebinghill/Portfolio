@@ -7,18 +7,19 @@ const ProjectCard = (props) => {
   if (props.projects.length > 0) {
     if (currentProject === "") {
       return (
-        <div>
+        <div className="project-card">
           <a href={props.projects[0].link} target="_blank">
             {props.projects[0].name}
           </a>
           {/*TODO MOVE INLINE STYLING TO CSS SHEET*/}
           <div
             style={{
+              borderRadius: "3px",
               backgroundImage: `url(${attackOfTheCodeImage})`,
               backgroundPosition: "center",
               backgroundSize: "cover",
-              height: "200px",
-              width: "200px",
+              height: "35vh",
+              width: "70vw",
             }}
           ></div>
         </div>
