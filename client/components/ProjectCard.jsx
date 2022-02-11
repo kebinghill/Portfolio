@@ -18,8 +18,8 @@ const ProjectCard = (props) => {
               backgroundImage: `url(${attackOfTheCodeImage})`,
               backgroundPosition: "center",
               backgroundSize: "cover",
-              height: "35vh",
-              width: "70vw",
+              minHeight: "250px",
+              minWidth: "250px",
             }}
           ></div>
         </div>
