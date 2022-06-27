@@ -7,7 +7,7 @@ const ProjectCard = (props) => {
   if (props.projects.length > 0) {
     if (currentProject === "") {
       return (
-        <div className="project-card">
+        <div className="carousel_photo initial">
           <a href={props.projects[0].link} target="_blank">
             {props.projects[0].name}
           </a>
@@ -15,8 +15,8 @@ const ProjectCard = (props) => {
           <img
             src={attackOfTheCodeImage}
             alt="Nothing to see here"
-            height="200px"
-            width="250px"
+            height="175px"
+            width="225px"
             className="project-image"
           />
         </div>

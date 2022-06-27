@@ -21,10 +21,12 @@ const ProjectList = () => {
   };
 
   return (
-    <div className="project-list">
-      <FaAngleLeft className="project-arrows" />
-      <ProjectCard projects={projects} />
-      <FaAngleRight className="project-arrows" />
+    <div className="carousel-wrapper">
+      <div className="carousel">
+        <FaAngleLeft className="project-arrows --prev" />
+        <ProjectCard projects={projects} className="carousel_photo" />
+        <FaAngleRight className="project-arrows --next" />
+      </div>
     </div>
   );
 };
