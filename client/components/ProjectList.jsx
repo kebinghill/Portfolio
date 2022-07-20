@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 import ProjectCard from "./ProjectCard";
 
 const ProjectList = () => {
-  const [projects, getProjects] = useState("");
+  const [projects, getProjects] = useState([]);
+  const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
     getAllProjects();
+    setLoading(false);
   }, []);
 
   const getAllProjects = () => {
@@ -20,13 +21,31 @@ const ProjectList = () => {
       .catch((error) => console.error(`Error: ${error}`));
   };
 
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
   return (
-    <div className="carousel-wrapper">
-      <div className="carousel">
-        <FaAngleLeft className="project-arrows --prev" />
-        <ProjectCard projects={projects} className="carousel_photo" />
-        <FaAngleRight className="project-arrows --next" />
-      </div>
+    <div className="project-list">
+      {Object.values(projects).map((project) => {
+        console.log(project);
+        return (
+          <div className="project-card" key={project.id}>
+            <a href={project.link}>
+              <h3>{project.name}</h3>
+
+              {
+                //TO DO: IMAGE RENDERING
+                /* <img src={project.headerImage} alt="" /> */
+              }
+
+              {
+                //TO DO: ADD DESCRIPTION TO DB
+              }
+            </a>
+          </div>
+        );
+      })}
     </div>
   );
 };
