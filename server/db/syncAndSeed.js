@@ -8,17 +8,17 @@ const syncAndSeed = async () => {
     Project.create({
       name: "Attack Of The Code",
       link: "http://attack-of-the-code.com/",
-      headerImage: "attack-of-the-code.png",
+      headerImage: "../../public/images/attack-of-the-code.png",
     });
     Project.create({
       name: "Peer Support Resource",
       link: "https://peer-support-resource.herokuapp.com/",
-      headerImage: "unsplashheader1.jpeg",
+      headerImage: "../../public/images/unsplashheader1.jpeg",
     });
     Project.create({
       name: "Finance App",
       link: "https://peer-support-resource.herokuapp.com/",
-      headerImage: "unsplashheader1.jpeg",
+      headerImage: "../../public/images/unsplashheader1.jpeg",
     });
   } catch (error) {
     console.log("ERROR SEEDING DB", error);

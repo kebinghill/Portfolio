@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import ProjectCard from "./ProjectCard";
+import attackOfTheCodeImage from "../../public/images/attack-of-the-code.png";
 
 const ProjectList = () => {
   const [projects, getProjects] = useState([]);
@@ -28,7 +28,6 @@ const ProjectList = () => {
   return (
     <div className="project-list">
       {Object.values(projects).map((project) => {
-        console.log(project);
         return (
           <div className="project-card" key={project.id}>
             <a href={project.link}>
@@ -36,7 +35,12 @@ const ProjectList = () => {
 
               {
                 //TO DO: IMAGE RENDERING
-                /* <img src={project.headerImage} alt="" /> */
+                <img
+                  src={attackOfTheCodeImage}
+                  alt="Nothing to see here"
+                  height="200px"
+                  width="350px"
+                />
               }
 
               {
