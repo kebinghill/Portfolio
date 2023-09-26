@@ -9,6 +9,7 @@ module.exports = {
   output: {
     path: __dirname,
     filename: "./public/bundle.js",
+    hashFunction: "xxhash64",
   },
   module: {
     rules: [
