@@ -7,10 +7,10 @@ const Bio = () => {
         {/* TODO: need to configure css for bio and add resume image/doc below in separate container*/}
         <div className="bio-section">
           <p className="bio-text">
-            Hi, my name is Kevin and I am a software engineer/musician. I
-            graduated from Fullstack Academy's Flex Web Development program in
-            July of 2021. Before Fullstack Academy, I took various courses
-            offered on Udemy and Codecademy, both sites I still use to this day.
+            Hi, my name is Kevin and I am a software engineer. I graduated from
+            Fullstack Academy's Flex Web Development program in July of 2021.
+            Before Fullstack Academy, I took various courses offered on Udemy
+            and Codecademy, both sites I still use to this day.
           </p>
           <p className="bio-text">
             Check out my resume below for my work history and/or navigate to the
