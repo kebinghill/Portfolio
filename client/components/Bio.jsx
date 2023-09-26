@@ -19,7 +19,7 @@ const Bio = () => {
         </div>
         <div className="section-container">
           <a
-            href="https://drive.google.com/file/d/17P_W4mMiXI5xfCSSxLHVkK_D4wecrORY/view?usp=sharing"
+            href="https://drive.google.com/file/d/1tP6SPC1wXcTKCJnJD3TM-Bk6LPRhTP89/view?usp=sharing"
             target="_blank"
           >
             <div className="bio-section resume"></div>
