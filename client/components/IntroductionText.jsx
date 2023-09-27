@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import ContactButton from "./ContactButton";
+import { isMobile } from "react-device-detect";
 
 const IntroductionText = () => {
   // set up text to print, each item in array is new line
@@ -46,7 +47,14 @@ const IntroductionText = () => {
 
   return (
     <div className="section-container">
-      <div id="introduction-text"></div>
+      {isMobile ? (
+        <div id="introduction-text"></div>
+      ) : (
+        <div className={"intro-section-desktop"}>
+          <div className="headshot-container headshot"></div>
+          <div id="introduction-text"></div>
+        </div>
+      )}
       <ContactButton
         label="Contact"
         mailto="mailto:kevin.gil@hotmail.com"

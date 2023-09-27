@@ -98,12 +98,32 @@ a {
   border-radius: 4px;
 }
 
+.headshot {
+  background-image: url('./images/headshot1.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.headshot-container {
+  border-radius: 4px;
+  height: 450px;
+  width: 370px;
+}
+
+.intro-section-desktop {
+  display: flex;
+  justify-content: center;
+  max-width: 100vw;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
 #introduction-text {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 43vh;
-  width: 98vw;
+  width: 65vw;
   text-align: center;
   font-size: 18.5px;
   letter-spacing: 5px;
@@ -112,20 +132,29 @@ a {
 .section-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   width: 100vw;
   color: white;
 }
 
-.bio-section {
+.bio-section-mobile {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: rgba(128, 128, 128, 0.13);
   border-radius: 4px;
   height: 450px;
-  width: 350px;
+  width: 370px;
+}
+
+.bio-section-desktop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.13);
+  border-radius: 4px;
+  padding: 5px 5px 5px 5px;
 }
 
 .bio-text {
