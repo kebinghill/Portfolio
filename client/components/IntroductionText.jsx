@@ -24,7 +24,12 @@ const IntroductionText = () => {
     const typewriter = () => {
       sContents = " ";
       iRow = Math.max(0, iIndex - iScrollAt);
-      var destination = document.getElementById("introduction-text");
+      let destination;
+      if (isMobile) {
+        destination = document.getElementById("introduction-text-mobile");
+      } else {
+        destination = document.getElementById("introduction-text");
+      }
 
       while (iRow < iIndex) {
         sContents += aText[iRow++] + "<br />";
@@ -48,7 +53,7 @@ const IntroductionText = () => {
   return (
     <div className="section-container">
       {isMobile ? (
-        <div id="introduction-text"></div>
+        <div id="introduction-text-mobile"></div>
       ) : (
         <div className={"intro-section-desktop"}>
           <div className="headshot-container headshot"></div>

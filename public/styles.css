@@ -106,8 +106,8 @@ a {
 
 .headshot-container {
   border-radius: 4px;
-  height: 450px;
-  width: 370px;
+  height: 420px;
+  width: 340px;
 }
 
 .intro-section-desktop {
@@ -123,7 +123,18 @@ a {
   justify-content: space-around;
   align-items: center;
   height: 43vh;
-  width: 65vw;
+  width: 61vw;
+  text-align: center;
+  font-size: 18.5px;
+  letter-spacing: 5px;
+}
+
+#introduction-text-mobile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 43vh;
+  width: 100vw;
   text-align: center;
   font-size: 18.5px;
   letter-spacing: 5px;
