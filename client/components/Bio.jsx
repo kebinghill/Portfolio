@@ -6,7 +6,6 @@ const Bio = () => {
   return (
     <div>
       <div className="section-container">
-        {/* TODO: need to configure css for bio and add resume image/doc below in separate container*/}
         <div
           className={isMobile ? "bio-section-mobile" : "bio-section-desktop"}
         >
