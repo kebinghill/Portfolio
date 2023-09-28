@@ -8,7 +8,7 @@ import Music from "./Music";
 
 const App = () => {
   return (
-    <div>
+    <>
       <Header />
       <Routes>
         <Route path="/" element={<IntroductionText />} />
@@ -16,7 +16,7 @@ const App = () => {
         <Route path="/code" element={<Code />} />
         <Route path="/music" element={<Music />} />
       </Routes>
-    </div>
+    </>
   );
 };
 

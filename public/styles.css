@@ -149,6 +149,12 @@ a {
   color: white;
 }
 
+.section-container-resume {
+  display: flex;
+  justify-content: space-between;
+  width: 99vw;
+}
+
 .bio-section-mobile {
   display: flex;
   flex-direction: column;
@@ -183,6 +189,20 @@ a {
   background-size: cover;
 }
 
+.resume-container {
+  border-radius: 4px;
+  height: 450px;
+  width: 370px;
+}
+
+.resume-container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 71vw;
+  padding: 5px;
+}
+
 .project-list {
   display: flex;
   flex-direction: column;
@@ -206,4 +226,8 @@ a {
 
 .internal-card {
   padding-top: 5px;
+}
+
+li {
+  padding: 7px;
 }
