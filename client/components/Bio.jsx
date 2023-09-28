@@ -27,38 +27,40 @@ const Bio = () => {
           >
             <div className="resume-container resume"></div>
           </a>
-          <div className="resume-container-text">
-            <div id="sub-title">SUMMARY</div>
-            <p className="bio-text">
-              I started my career working as a technical support agent for
-              startups such as Peloton and Monument. In 2021, I went through an
-              intensive 6 month full-stack development bootcamp where I learned
-              to program web apps using Javascript and associated frameworks. I
-              then used that knowledge to work as part of the Monument
-              engineering team to improve user experience with new features,
-              improvements on old features, and bug fixes in a real world
-              production environment.
-            </p>
-            <div id="sub-title">RELEVANT EXPERIENCE</div>
-            <p className="bio-text">Software Engineer - Monument</p>
-            <ul>
-              <li>
-                Created and implemented the “DailyAffirmations” feature,
-                allowing users to receive personalized affirmations on their
-                dashboards. Integrated with Customer.io to send affirmations via
-                text messages to opted-in users.
-              </li>
-              <li>
-                Developed relational tables,service methods,and testing to
-                facilitate the integration of employers on the app, expanding
-                our reach and providing additional support to those in need.
-              </li>
-              <li>
-                Resolved various user experience bugs promptly and effectively
-                to ensure seamless usage of the application.
-              </li>
-            </ul>
-          </div>
+          {!isMobile && (
+            <div className="resume-container-text">
+              <div id="sub-title">SUMMARY</div>
+              <p className="bio-text">
+                I started my career working as a technical support agent for
+                startups such as Peloton and Monument. In 2021, I went through
+                an intensive 6 month full-stack development bootcamp where I
+                learned to program web apps using Javascript and associated
+                frameworks. I then used that knowledge to work as part of the
+                Monument engineering team to improve user experience with new
+                features, improvements on old features, and bug fixes in a real
+                world production environment.
+              </p>
+              <div id="sub-title">RELEVANT EXPERIENCE</div>
+              <p className="bio-text">Software Engineer - Monument</p>
+              <ul>
+                <li>
+                  Created and implemented the “DailyAffirmations” feature,
+                  allowing users to receive personalized affirmations on their
+                  dashboards. Integrated with Customer.io to send affirmations
+                  via text messages to opted-in users.
+                </li>
+                <li>
+                  Developed relational tables,service methods,and testing to
+                  facilitate the integration of employers on the app, expanding
+                  our reach and providing additional support to those in need.
+                </li>
+                <li>
+                  Resolved various user experience bugs promptly and effectively
+                  to ensure seamless usage of the application.
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </div>
