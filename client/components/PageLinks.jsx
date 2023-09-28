@@ -11,12 +11,12 @@ const PageLinks = () => {
       <Link to="/bio" className="page-link header-link">
         Bio
       </Link>
-      <Link to="/code" className="page-link header-link">
+      {/* <Link to="/code" className="page-link header-link">
         Code
       </Link>
       <Link to="/music" className="page-link header-link">
         Music
-      </Link>
+      </Link> */}
     </div>
   );
 };

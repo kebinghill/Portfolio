@@ -31,7 +31,8 @@ a {
   background-color: rgb(40, 102, 102);
   padding: 10px;
   border-radius: 4px;
-  width: 85vw;
+  width: 65vw;
+  max-width: 1000px;
 }
 
 .contact-button:hover {
@@ -228,6 +229,50 @@ a {
   padding-top: 5px;
 }
 
-li {
+li.experience {
   padding: 7px;
+}
+
+li.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+p.footer-item {
+  padding-right: 4px;
+}
+
+ul.footer-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 0px;
+  width: 99vw;
+}
+
+.footer:hover {
+  background-color: rgba(185, 185, 185, 0.5);
+  border-radius: 3px;
+  height: 30px;
+}
+
+.footer-link {
+  height: 20px;
+  width: 20px;
+}
+
+.footer-container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-image: url("./images/unsplashfooter4.png");
+  background-size: cover;
+  color: white;
+  max-height: 100px;
 }

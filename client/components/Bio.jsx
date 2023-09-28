@@ -43,18 +43,18 @@ const Bio = () => {
               <div id="sub-title">RELEVANT EXPERIENCE</div>
               <p className="bio-text">Software Engineer - Monument</p>
               <ul>
-                <li>
+                <li className="experience">
                   Created and implemented the “DailyAffirmations” feature,
                   allowing users to receive personalized affirmations on their
                   dashboards. Integrated with Customer.io to send affirmations
                   via text messages to opted-in users.
                 </li>
-                <li>
+                <li className="experience">
                   Developed relational tables,service methods,and testing to
                   facilitate the integration of employers on the app, expanding
                   our reach and providing additional support to those in need.
                 </li>
-                <li>
+                <li className="experience">
                   Resolved various user experience bugs promptly and effectively
                   to ensure seamless usage of the application.
                 </li>
